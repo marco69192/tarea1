@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.conteiner{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:blueviolet; }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+ 
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    
+}
+
+#carouselExampleDark {
+    width: 100vw; 
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden;
+}
+
+#carouselExampleDark .carousel-inner {
+    width: 100%;
+    height: 100%; 
+}
+
+#carouselExampleDark .carousel-item img {
+    width: 100%; 
+    height: 100vh; 
+    object-fit: cover; 
+}
+
+
+#carouselExampleDark .carousel-caption h5 {
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-size: 100px;
+}
+
+#carouselExampleDark .carousel-caption p {
+    color: #f8f9fa; 
+    font-size: 2rem; 
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#carouselExampleDark {
+    padding-top: 20px;
+    width: 100vw; 
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+
+}
+
+
+#carouselExampleDark .carousel-inner {
+    width: 100%;
+    height: 100%; 
+}
+
+#carouselExampleDark .carousel-item img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+}
+
+
+
+#SomosEventos .conteiner{
+    text-align: center;
+    padding: 200px 12px
+}
+
+#nuestroseventos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestroseventos .conteiner{  
+    padding: 150px 12px;
+}
+
+#nuestroseventos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: blueviolet;
+
+}
+
+#nuestroseventos p{
+    display: none;
+}
+
+#nuestroseventos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/img2.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/img3.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/img4.jpg");
+
+}
+
+
+
+#asisteya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#asisteya h2{
+    font-size: 3vw;
+}
+
+#asisteya button{
+    font-size: 1vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .conteiner{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .conteiner{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #SomosEventos .conteiner{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #SomosEventos .texto{
+        width: 89%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #SomosEventos h2{
+        margin-top: 0px;
+        
+    }
+
+    #SomosEventos .img-conteiner{
+        background-image: url("imagenes/lila.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 800px;
+        width: 900px; 
+    }
+
+    #nuestroseventos .Eventos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestroseventos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestroseventos h2{
+        font-size: 4em;
+        color: blueviolet;
+    }
+
+    #nuestroseventos h3{
+        margin-top: 0;
+    }
+
+    #nuestroseventos .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/img6.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/img7.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/img8.jpg");
+
+    }
+
+   
+    #asisteya h2{
+        font-size: 5em;
+    }
+
+    #asisteya button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 700px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #SomosEventos .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #SomosEventos .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #SomosEventos h2{
+        margin-top: 0px;
+        
+    }
+    
+    #SomosEventos p{ 
+        font-size: 30px;
+    }
+
+    #texto h2{
+        font-size: 100px;
+    }
+
+   
+
+    #nuestroseventos .Eventos{
+
+        display: flex;
+        justify-content: center;
+    }
+    #nuestroseventos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestroseventos h3{
+        margin-top: 0;
+    }
+    #nuestroseventos .carta{
+        padding: 15px;
+    }
+
+    
+}
